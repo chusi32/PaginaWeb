@@ -75,21 +75,4 @@
   background-position: -99px -33px;
 }
 /*Fin iconos redes sociales*/
-/*Foto de inicio*/
-body {
-  background: url(background-photo.jpg) center center cover no-repeat fixed;
-}
-/*Fin foto de inicio*/
-/*.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-  }*/
-.carousel .item {
-  max-height: 800px;
-  width: 100%;
-}
-.carousel .item img {
-  width: 100%;
-}
 /*# sourceMappingURL=jassoluciones.css.map */
