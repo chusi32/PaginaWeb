@@ -1,18 +1,18 @@
 /*Iconos de redes sociales*/
-#m-soc2 {
+.m-soc2 {
   height: 50px;
   margin: 18px 0 0 10px;
   padding: 0;
   width: 220px;
 }
-#m-soc2 li {
+.m-soc2 li {
   border: none;
   float: left;
   list-style: none;
   margin: 7px;
   padding: 0;
 }
-#m-soc2 li a {
+.m-soc2 li a {
   background: url("../imagenes/spriteRedesSociales.png") no-repeat 0 0;
   display: block;
   height: 33px;
@@ -22,7 +22,7 @@
   position: relative;
   width: 33px;
 }
-#m-soc2 li a span {
+.m-soc2 li a span {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
@@ -42,36 +42,36 @@
   white-space: nowrap;
   width: auto;
 }
-#m-soc2 li a:hover {
+.m-soc2 li a:hover {
   text-decoration: none;
 }
-#m-soc2 li a:hover span {
+.m-soc2 li a:hover span {
   filter: alpha(opacity=70);
   opacity: .7;
   top: -23px;
 }
-#m-soc2 li a.twitter {
+.m-soc2 li a.twitter {
   background-position: 0 0;
 }
-#m-soc2 li a.twitter:hover {
+.m-soc2 li a.twitter:hover {
   background-position: 0 -33px;
 }
-#m-soc2 li a.facebook {
+.m-soc2 li a.facebook {
   background-position: -33px 0;
 }
-#m-soc2 li a.facebook:hover {
+.m-soc2 li a.facebook:hover {
   background-position: -33px -33px;
 }
-#m-soc2 li a.google {
+.m-soc2 li a.google {
   background-position: -66px 0;
 }
-#m-soc2 li a.google:hover {
+.m-soc2 li a.google:hover {
   background-position: -66px -33px;
 }
-#m-soc2 li a.rss {
+.m-soc2 li a.rss {
   background-position: -99px 0;
 }
-#m-soc2 li a.rss:hover {
+.m-soc2 li a.rss:hover {
   background-position: -99px -33px;
 }
 /*Fin iconos redes sociales*/
@@ -193,4 +193,34 @@ footer {
   width: 100%;
 }
 /*/sticky footer*/
+/*Video responsive*/
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-responsive iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.video-responsive object {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/*/Video responsive*/
 /*# sourceMappingURL=jassoluciones.css.map */

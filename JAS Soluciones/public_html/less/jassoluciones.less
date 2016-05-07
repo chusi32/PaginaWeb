@@ -1,5 +1,5 @@
 /*Iconos de redes sociales*/
-#m-soc2 {
+.m-soc2 {
 	height:50px;
 	margin:18px 0 0 10px;
 	padding:0;
@@ -208,3 +208,37 @@ footer {
 	width: 100%;
 }
 /*/sticky footer*/
+
+/*Video responsive*/
+@widthVideoResponsivo: 100%;
+@heightVideoResponsivo: 100%;
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	iframe {
+		height: @widthVideoResponsivo;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: @widthVideoResponsivo;
+	}
+	object {
+		height: @widthVideoResponsivo;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: @widthVideoResponsivo;
+	}
+	embed {
+		height: @widthVideoResponsivo;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: @widthVideoResponsivo;
+	}
+}
+/*/Video responsive*/
