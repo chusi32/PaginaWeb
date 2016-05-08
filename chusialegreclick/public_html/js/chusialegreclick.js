@@ -32,6 +32,7 @@ $(document).ready(function(){
         switch($(this).attr('id'))
         {
             case 'liConocenos':
+              $('#imgPagina').attr('src', 'imagenes/slide_logo.jpg');
               $('#tituloPagina').text('CONOCENOS');
               $('#divPaginasHeader').show();
               $('#divConocenos').show();
