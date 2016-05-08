@@ -3,14 +3,35 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device‐width, initial‐scale=1.0">
-        <title>JAS Soluciones</title>
+        <title>Chusi Alegre Click</title>
         <!‐‐ CSS de Bootstrap ‐‐>
-        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/jassoluciones.css" rel="stylesheet">
-        <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/chusialegreclick.css" rel="stylesheet">
     </head>
     <body>
 
+        <!--Inicio Dialogo modal-->
+        <div class="modal fade" id="aviso">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text text-danger text-center">Página Web Ficticia</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text text-primary text-center">
+                            Hola. Si ha llegado hasta aquí espero que le guste la página. Pero debe de saber que ésta Web es totalmente ficticia.
+                            Solamente es para un trabajo del Grado Superior de Desarrollo de Aplicaciones Web. Que tenga un buen día.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin Dialogo modal-->
+        
+        
         <!--Comienzo Barra de navegación-->
         <nav class="navbar navbar-inverse navbar-static">
             <div class="container-fluid">
@@ -20,20 +41,25 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span> 
                     </button>
-                    <a class="navbar-brand" href="#">JAS Soluciones</a>
+                    <a class="navbar-brand" href="#">Chusi Alegre Click</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Inicio</a></li>
-                        <li><a href="#">Conocenos</a></li>
-                        <li><a href="#">Servicios</a></li> 
-                        <li><a href="#">Contacta</a></li>
+                    <ul class="nav navbar-nav" id="ulMenu">
+                        <li class="active" id="liInicio"><a href="#">Inicio</a></li>
+                        <li id="liConocenos"><a href="#">Conocenos</a></li>
+                        <li id="liBodas"><a href="#">Bodas</a></li> 
+                        <li id="liBautizos"><a href="#">Bautizos</a></li>
+                        <li id="liComuniones"><a href="#">Comuniones</a></li>
+                        <li id="liPeques"><a href="#">Peques</a></li>
+                        <li id="liFamilia"><a href="#">Familia</a></li>
+                        <li id="liContacto"><a href="#">Contacto</a></li>
+                        <li id="liMapa"><a href="#">Mapa del sitio</a></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Multimedia
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Descargas
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Galeria</a></li>
-                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Descargar Diseño</a></li>
+                                <li><a href="#">Descargar Documentación</a></li>
                                 <li><a href="#">Page 1-3</a></li> 
                             </ul>
                         </li>
@@ -60,7 +86,7 @@
         
         
         <!--Comienzo div Inicio--> 
-        <div class="container">
+        <div class="container paginas" id="divInicio">
             <div class="row">
 		<!-- Carousel -->
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -195,38 +221,39 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="jumbotron">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <img class="img img-thumbnail img-responsive pull-left" width="300" height="300" src="Fotos sprite/Familia 1 (Custom).jpg">
-                        <p>El objetivo de Chusi Alegre Click es reflejar la auténtica personalidad de las personas que fotografiamos y eso nos permite
-                            crear imágenes de calidad que surgen de la complicidad entre el cliente y el fotografo. Transmitimos emociones, reflejamos
-                            sentimientos y de ésta manera creamos un reportaje espectacular que se transforma en un recuerdo para toda la vida. En 
-                            todos nuestros reportajes buscamos un equilibrio perfecto entre la parte artistica y lo profesional, todos los trabajos
-                            están marcados por la creación de la nueva Fotografia Social. Además, Chusi Alegre Click también cuenta con un equipo de
-                            editores y retocadores que son también responsables de nuestra excelencia.
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <img class="img img-thumbnail img-responsive pull-left" width="300" height="300" src="Fotos sprite/Familia 1 (Custom).jpg">
+                            <p>El objetivo de Chusi Alegre Click es reflejar la auténtica personalidad de las personas que fotografiamos y eso nos permite
+                                crear imágenes de calidad que surgen de la complicidad entre el cliente y el fotografo. Transmitimos emociones, reflejamos
+                                sentimientos y de ésta manera creamos un reportaje espectacular que se transforma en un recuerdo para toda la vida. En 
+                                todos nuestros reportajes buscamos un equilibrio perfecto entre la parte artistica y lo profesional, todos los trabajos
+                                están marcados por la creación de la nueva Fotografia Social. Además, Chusi Alegre Click también cuenta con un equipo de
+                                editores y retocadores que son también responsables de nuestra excelencia.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
         
+        
+        
         <!--Header Paginas-->
-        <div class="container">
+        <div class="container paginas" id="divPaginasHeader">
             <div class="row">
                 <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12">
-                    <img class="img img-thumbnail img-responsive" src="Fotos sprite/logo chusi.jpg" width="1024" height="200">
-                    <h1 class="text-warning text-center">BODAS</h1>
+                    <img class="img img-thumbnail img-responsive" id="imgPagina" src="Fotos sprite/logo chusi.jpg" width="1024" height="200">
+                    <h1 class="text-warning text-center" id="tituloPagina">BODAS</h1>
                 </div>
             </div>
         </div>
         
         
         <!--Inicio Conocenos-->
-        <div class="container">
+        <div class="container paginas" id="divConocenos">
             <div class="jumbotron">
                 <div class="row">
                 
@@ -267,7 +294,7 @@
         
         
         <!--Inicio Bodas-->
-        <div class="container">
+        <div class="container paginas" id="divBodas">
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-sx-12 col-sm-12 col-md-4 col-lg-4">
@@ -276,11 +303,34 @@
                                 <h2 class="text-warning text-center">Marta y Pedro</h2>
                                 <div class="panel-body">
                                     <a href="#">
-                                        <img class="img img-rounded img-responsive center-block" src="Fotos sprite/boda 2 (Custom).jpg" width="250" height="250">
+                                        <img class="img img-rounded img-responsive center-block" id="prueba" src="Fotos sprite/boda 2 (Custom).jpg" width="250" height="250">
                                     </a>
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        
+                        <!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <img src="Fotos sprite/boda 2 (Custom).jpg" id="imagepreview" style="width: 400px; height: 264px;" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                        
+                        
+                        
                         
                     </div>
                     <div class="col-sx-12 col-sm-12 col-md-4 col-lg-4">
@@ -330,7 +380,7 @@
         
         
         <!--Inicio Contacto-->
-        <div class="container">
+        <div class="container paginas" id="divContacto">
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12">
@@ -360,12 +410,9 @@
                         <div class="video-responsive">
                             <iframe class="center-block " src="https://www.google.es/maps/d/embed?mid=1Gbf7uyzDLQTdxTQEIDV821s-6Q0"></iframe>
                         </div>
-                    </div>
-                    
-                    
+                    </div>    
                     <div class="col-sx-12 col-sm-12 col-md-6 col-lg-6">
                         <h3 class="text text-center text-warning">Contacta con nosotros</h3>
-
                         <div class="form-area">  
                             <form class="form-area" role="form">
                                 <br style="clear:both">
@@ -388,14 +435,6 @@
                             </form>
                         </div>
                     </div>
-                    
-                    <div class="col-sx-12 col-sm-12 col-md-6 col-lg-12 video-responsive">
-                        <h3 class="text text-center text-warning">Donde estamos</h3>
-                        <iframe class="center-block " src="https://www.google.es/maps/d/embed?mid=1Gbf7uyzDLQTdxTQEIDV821s-6Q0"></iframe>
-                    </div>
-                    
-                    
-                    
                 </div>
             </div>
         </div>
@@ -461,6 +500,7 @@
         
         <!‐‐ Librería jQuery requerida por los plugins de JavaScript ‐‐>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="js/chusialegreclick.js"></script>
         <!‐‐ Todos los plugins JavaScript de Bootstrap ‐‐>
         <script src="dist/js/bootstrap.min.js"></script>
     </body>
