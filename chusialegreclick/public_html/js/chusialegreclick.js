@@ -49,8 +49,18 @@ $(document).ready(function(){
         }
     });
     
-    $('#prueba').click(function(){
-        $('#imagemodal').modal('show');
+//    $('#prueba').click(function(){
+//        $('#imagemodal').modal('show');
+//    });
+
+    /*Cambiar el tipo de panel para saber cual está recibiendo el foco del ratón*/
+    $('.panelInicio').mouseover(function(){
+        $(this).removeClass('panel-warning');
+        $(this).addClass('panel-default');
+    });
+    $('.panelInicio').mouseout(function(){
+        $(this).removeClass('panel-default');
+        $(this).addClass('panel-warning');
     });
     
 });

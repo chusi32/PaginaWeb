@@ -180,15 +180,15 @@
 /*Sticky footer*/
 html {
   margin: 0;
-  padding: 0 0 200px;
+  padding: 0 0 300px;
 }
 body {
   margin: 0;
-  padding: 0 0 200px;
+  padding: 0 0 300px;
 }
 footer {
   bottom: 0;
-  height: 200px;
+  height: 300px;
   position: fixed;
   width: 100%;
 }
@@ -223,4 +223,9 @@ footer {
   width: 100%;
 }
 /*/Video responsive*/
+/*Puliciones*/
+img.detalle {
+  width: 300px;
+  height: 300px;
+}
 /*# sourceMappingURL=chusialegreclick.css.map */
