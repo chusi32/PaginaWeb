@@ -261,4 +261,48 @@ b {
 .error {
   color: red;
 }
+#thumbs {
+  overflow: hidden;
+  padding-top: 10px;
+}
+#thumbs img {
+  background-color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  float: left;
+  margin-right: 6px;
+  padding: 4px;
+  width: 100px;
+  height: 100px;
+}
+#largeImage {
+  background-color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding: 4px;
+  width: 600px;
+  height: 400px;
+}
+#description {
+  bottom: 0;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  width: 525px;
+}
+#panel {
+  position: relative;
+}
+/*.row {
+	margin-top:40px;
+	padding: 0 10px;
+}*/
+.clickable {
+  cursor: pointer;
+}
+.panel-heading span {
+  font-size: 15px;
+  margin-top: -20px;
+}
 /*# sourceMappingURL=chusialegreclick.css.map */

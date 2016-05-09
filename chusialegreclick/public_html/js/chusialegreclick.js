@@ -10,6 +10,11 @@ $(document).ready(function(){
     $('#divPaginasHeader').hide();
     $('#divConocenos').hide();
     $('#divBodas').hide();
+    $('#divBautizos').hide();
+    $('#divComuniones').hide();
+    $('#divPeques').hide();
+    $('#divFamilias').hide();
+    $('#divGaleria').hide();
     $('#divContacto').hide();
     /*fin initialize*/
     
@@ -67,13 +72,46 @@ $(document).ready(function(){
               $('#divPaginasHeader').show();
               $('#divFamilias').show();
               break;
+            case 'liGaleria':
+              $('#imgPagina').attr('src', 'imagenes/slide_familias.jpg');
+              $('#tituloPagina').text('---GALERIA---');
+              $('#divPaginasHeader').show();
+              $('#divGaleria').show();
+              break;
             case 'liContacto':
+              $('#imgPagina').attr('src', 'imagenes/slide_contacto.jpg');
               $('#tituloPagina').text('---CONTACTO---');
               $('#divPaginasHeader').show();
               $('#divContacto').show();
-              break;
-            
+              break; 
         }
+        
+        $('#thumbs').delegate('img','click', function(){
+            $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+            $('#description').html($(this).attr('alt'));
+        });
+        
+        
+        
+        
+        
+        $(document).on('click', '.panel-heading span.clickable', function(e){
+            var $this = $(this);
+            if(!$this.hasClass('panel-collapsed')) {
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+            } else {
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+            }
+        })
+        
+        
+        
+        
+        
     });
 
     /*Cambiar el tipo de panel para saber cual está recibiendo el foco del ratón*/
@@ -120,8 +158,9 @@ $(document).ready(function(){
         asunto: 'Debes indicar el motivo de tu mensaje.',
         mensaje: 'Debes introducir un mensaje.',
     },
-    submitHandler: function() {
+    submitHandler: function(form) {
       alert("Se ha enviado tu mensaje.");
+      return false;
     }
   });
     
