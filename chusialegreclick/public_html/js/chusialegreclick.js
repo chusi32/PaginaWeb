@@ -83,10 +83,57 @@ $(document).ready(function(){
               $('#tituloPagina').text('---CONTACTO---');
               $('#divPaginasHeader').show();
               $('#divContacto').show();
-              break; 
+              break;
+          case 'liInicio':
+              $('#divInicio').show();
         }
-        
-        $('#thumbs1').delegate('img','click', function(){
+    });
+    
+    
+    
+    /*Eventos botones de inicio*/
+    $('#imgBodas').click(function(){
+        $('#divInicio').hide();
+         $('#imgPagina').attr('src', 'imagenes/slide_bodas.jpg');
+         $('#tituloPagina').text('---BODAS---');
+         $('#divPaginasHeader').show();
+         $('#divBodas').show();
+    });
+    
+    $('#imgBautizos').click(function(){
+        $('#divInicio').hide();
+       $('#imgPagina').attr('src', 'imagenes/slide_bautizos.jpg');
+       $('#tituloPagina').text('---BAUTIZOS---');
+       $('#divPaginasHeader').show();
+       $('#divBautizos').show(); 
+    });
+    
+    $('#imgComuniones').click(function(){
+        $('#divInicio').hide();
+        $('#imgPagina').attr('src', 'imagenes/slide_comuniones.jpg');
+        $('#tituloPagina').text('---COMUNIONES---');
+        $('#divPaginasHeader').show();
+        $('#divComuniones').show();
+    });
+    
+    $('#imgPeques').click(function(){
+        $('#divInicio').hide();
+        $('#imgPagina').attr('src', 'imagenes/slide_peques.jpg');
+        $('#tituloPagina').text('---PEQUES---');
+        $('#divPaginasHeader').show();
+        $('#divPeques').show();
+    });
+    
+    $('#imgFamilias').click(function(){
+        $('#divInicio').hide();
+        $('#imgPagina').attr('src', 'imagenes/slide_familias.jpg');
+        $('#tituloPagina').text('---FAMILIAS---');
+        $('#divPaginasHeader').show();
+        $('#divFamilias').show();
+    });
+    
+    /*Galeria de imagenes*/
+    $('#thumbs1').delegate('img','click', function(){
             $('#largeImage1').attr('src',$(this).attr('src').replace('thumb','large'));
             $('#description1').html($(this).attr('alt'));
         });
@@ -104,7 +151,7 @@ $(document).ready(function(){
         
         
         
-        
+        /*Expandir o contraer panel*/
         $(document).on('click', '.panel-heading span.clickable', function(e){
             var $this = $(this);
             if(!$this.hasClass('panel-collapsed')) {
@@ -119,10 +166,12 @@ $(document).ready(function(){
         })
         
         
-        
-        
-        
-    });
+    
+    
+    
+    
+    
+    
 
     /*Cambiar el tipo de panel para saber cual está recibiendo el foco del ratón*/
     $('.panelInicio').mouseover(function(){
