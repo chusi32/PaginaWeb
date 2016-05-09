@@ -73,7 +73,7 @@ $(document).ready(function(){
               $('#divFamilias').show();
               break;
             case 'liGaleria':
-              $('#imgPagina').attr('src', 'imagenes/slide_familias.jpg');
+              $('#imgPagina').attr('src', 'imagenes/slide_galerias.jpg');
               $('#tituloPagina').text('---GALERIA---');
               $('#divPaginasHeader').show();
               $('#divGaleria').show();
