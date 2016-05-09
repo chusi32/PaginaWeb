@@ -91,6 +91,87 @@ $(document).ready(function(){
     
     
     
+    
+    
+    
+    //menu
+    $('#footerUlMenu li').click(function(){
+        $("#footerUlMenu li").each(function(){
+            if ($(this).hasClass('active'))
+            {    
+                $(this).removeClass('active');
+            }
+        });
+        //activamos la pestaña pulsada
+        $(this).addClass('active');
+        //ocultamos todos contenedores
+        $('.paginas').each(function(){
+            $(this).hide();
+        });
+        //depende de que elemento se haya activado mostramos unos elementos u otros.
+        switch($(this).attr('id'))
+        {
+            case 'fLiConocenos':
+              $('#imgPagina').attr('src', 'imagenes/slide_logo.jpg');
+              $('#tituloPagina').text('---CONOCENOS---');
+              $('#divPaginasHeader').show();
+              $('#divConocenos').show();
+              break;
+            case 'fLiBodas':
+              $('#imgPagina').attr('src', 'imagenes/slide_bodas.jpg');
+              $('#tituloPagina').text('---BODAS---');
+              $('#divPaginasHeader').show();
+              $('#divBodas').show();
+              break;
+            case 'fLiBautizos':
+              $('#imgPagina').attr('src', 'imagenes/slide_bautizos.jpg');
+              $('#tituloPagina').text('---BAUTIZOS---');
+              $('#divPaginasHeader').show();
+              $('#divBautizos').show();
+              break;
+            case 'fLiComuniones':
+              $('#imgPagina').attr('src', 'imagenes/slide_comuniones.jpg');
+              $('#tituloPagina').text('---COMUNIONES---');
+              $('#divPaginasHeader').show();
+              $('#divComuniones').show();
+              break;
+            case 'fLiPeques':
+              $('#imgPagina').attr('src', 'imagenes/slide_peques.jpg');
+              $('#tituloPagina').text('---PEQUES---');
+              $('#divPaginasHeader').show();
+              $('#divPeques').show();
+              break;
+            case 'fLiFamilia':
+              $('#imgPagina').attr('src', 'imagenes/slide_familias.jpg');
+              $('#tituloPagina').text('---FAMILIAS---');
+              $('#divPaginasHeader').show();
+              $('#divFamilias').show();
+              break;
+            case 'fLiGaleria':
+              $('#imgPagina').attr('src', 'imagenes/slide_galerias.jpg');
+              $('#tituloPagina').text('---GALERIA---');
+              $('#divPaginasHeader').show();
+              $('#divGaleria').show();
+              break;
+            case 'fLiContacto':
+              $('#imgPagina').attr('src', 'imagenes/slide_contacto.jpg');
+              $('#tituloPagina').text('---CONTACTO---');
+              $('#divPaginasHeader').show();
+              $('#divContacto').show();
+              break;
+          case 'fLiInicio':
+              $('#divInicio').show();
+        }
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /*Eventos botones de inicio*/
     $('#imgBodas').click(function(){
         $('#divInicio').hide();
