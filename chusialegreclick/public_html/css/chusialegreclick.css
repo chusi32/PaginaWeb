@@ -261,11 +261,11 @@ b {
 .error {
   color: red;
 }
-#thumbs {
+.thumbs {
   overflow: hidden;
   padding-top: 10px;
 }
-#thumbs img {
+.thumbs img {
   background-color: white;
   border: 1px solid gray;
   cursor: pointer;
@@ -275,7 +275,7 @@ b {
   width: 100px;
   height: 100px;
 }
-#largeImage {
+.largeImage {
   background-color: white;
   border: 1px solid gray;
   cursor: pointer;
@@ -283,7 +283,7 @@ b {
   width: 600px;
   height: 400px;
 }
-#description {
+.text-description {
   bottom: 0;
   color: white;
   margin: 5px;
@@ -291,7 +291,7 @@ b {
   position: absolute;
   width: 525px;
 }
-#panel {
+.panel-gallery {
   position: relative;
 }
 /*.row {

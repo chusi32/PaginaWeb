@@ -86,9 +86,19 @@ $(document).ready(function(){
               break; 
         }
         
-        $('#thumbs').delegate('img','click', function(){
-            $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
-            $('#description').html($(this).attr('alt'));
+        $('#thumbs1').delegate('img','click', function(){
+            $('#largeImage1').attr('src',$(this).attr('src').replace('thumb','large'));
+            $('#description1').html($(this).attr('alt'));
+        });
+        
+        $('#thumbs2').delegate('img','click', function(){
+            $('#largeImage2').attr('src',$(this).attr('src').replace('thumb','large'));
+            $('#description2').html($(this).attr('alt'));
+        });
+        
+        $('#thumbs3').delegate('img','click', function(){
+            $('#largeImage3').attr('src',$(this).attr('src').replace('thumb','large'));
+            $('#description3').html($(this).attr('alt'));
         });
         
         
